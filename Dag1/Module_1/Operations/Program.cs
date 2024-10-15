@@ -18,15 +18,65 @@ internal class Program
 
         int a = 9;
         //int b = 3;
-        int result;
-        result = 3 + a; // Geneste expressie
+        //int result;
+        //result = 3 + a; // Geneste expressie
 
-        Console.WriteLine(result);
+        //Console.WriteLine(result);
 
+        // Rekenkundige operatoren
         //++a;   // a = a + 1
+        //a += 4;  // a = a + 4
         Console.WriteLine(++a);
         Console.WriteLine(a);
 
+        // Vergelijkingsoperatoren
+        // Komt altijd een boolean uit (waar of niet waar)
+        int x = 10;
+        int y = 20;
+
+        bool isgelijk = x == y;
+        Console.WriteLine(isgelijk);
+        bool isOngelijk = x != y;
+        Console.WriteLine(isOngelijk);
+        bool result = x > y;
+        Console.WriteLine(result);
+        result = x < y; 
+        result = x >= y;
+        result = x <= y;
+
+        // Logische operatoren
+        // Binaire operatoren waarbij de operands altijd een boolean moet zijn.
+
+        // Waarheidstabel AND (&&)
+        // | p     | q     | result
+        // | true | true | true
+        // | true | false| false
+        // | false| true | false
+        // | false| false| false
+
+        // Waarheidstabel OR (||)
+        // | p     | q     | result
+        // | true | true | true
+        // | true | false| true
+        // | false| true | true
+        // | false| false| false
+
+        // Waarheidstabel XOR (^)
+        // | p     | q     | result
+        // | true | true | false
+        // | true | false| true
+        // | false| true | true
+        // | false| false| false
+
+
+        bool p = true;
+        bool q = false;
+
+        result = p && q;
+        Console.WriteLine(result);
+
+        result = p || q;
+        Console.WriteLine(result);
 
     }
 }

@@ -17,7 +17,7 @@ internal class Program
         Console.WriteLine($"{a} - {b} = {resaf}");
         int resve = a * b;
         Console.WriteLine($"{a} * {b} = {resve}");
-        int ressu = a / b;
+        double ressu = a / (double)b;
         Console.WriteLine($"{a} / {b} = {ressu}");
         int resmo = a % b;
         Console.WriteLine($"{a} % {b} = {resmo}");

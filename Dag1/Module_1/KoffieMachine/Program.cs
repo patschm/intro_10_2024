@@ -21,22 +21,45 @@ internal class Program
         string drank = Console.ReadLine();
         Console.WriteLine($"Welk formaat? ({SMALL}ml, {MEDIUM}ml or {LARGE}ml)");
         string hoeveelheid = Console.ReadLine();
-        Console.WriteLine("Wilt u hierin suiker? (0 is geen, 1 is weinig 2 is normaal en 3 is veel)");
-        string sSuiker = Console.ReadLine();
-        byte hoeveelheidSuiker = byte.Parse(sSuiker);
-        // Of substitutie principe toepassen:
-        //byte hoeveelheidSuiker = byte.Parse(Console.ReadLine());
-        Console.WriteLine("Wilt u hierin melk? (0 is geen, 1 is weinig 2 is normaal en 3 is veel)");
-        string sMelk = Console.ReadLine();
-        byte hoeveelheidMelk = byte.Parse(sMelk);
+        Console.WriteLine("Wilt u suiker erin? (Y/N)");
+        string sOk = Console.ReadLine();
+        bool withSugar = sOk == "Y" || sOk == "y";
+        byte hoeveelheidSuiker = 0;
+        if (withSugar == true)
+        {
+            Console.WriteLine("Hoeveel suiker? (1 klontje, 2 klontjes, 3 klontjes)");
+            string sHoeveel = Console.ReadLine();
+            hoeveelheidSuiker = byte.Parse(sHoeveel);
+        }
+        Console.WriteLine("Wilt u melk erin? (Y/N)");
+        sOk = Console.ReadLine();
+        bool withMilk = sOk == "Y" || sOk=="y";
+        byte hoeveelheidMelk = 0;
+        if (withMilk)
+        {
+            Console.WriteLine("Hoeveel melk wilt u erin? (1 is weinig 2 is normaal en 3 is veel)");
+            string sMelk = Console.ReadLine();
+            hoeveelheidMelk = byte.Parse(sMelk);
+        }
 
-        Console.WriteLine($"Uw keuze is {drank} {hoeveelheid} met {hoeveelheidSuiker} suiker en {hoeveelheidMelk} melk");
-        //Console.Write("Uw keuze is: ");
-        //Console.Write(drank);
-        //Console.Write(" met ");
-        //Console.Write(hoeveelheidSuiker);
-        //Console.Write(" suiker en ");
-        //Console.Write(hoeveelheidMelk);
-        //Console.WriteLine(" melk");
+        Console.Write($"Uw keuze is {drank} {hoeveelheid}ml");
+        if (withSugar)
+        {
+            if (hoeveelheidSuiker == 1)
+            {
+                Console.Write($" met {hoeveelheidSuiker} klontje suiker");
+            }
+            else
+            {
+                Console.Write($" met {hoeveelheidSuiker} klontjes suiker");
+            }
+        }
+        if (withMilk )
+        {
+            Console.Write($" en {hoeveelheidMelk} melk");
+        }
+        Console.WriteLine();
+       //Console.Write("\r\n");
+        Console.WriteLine("En verder");
     }
 }
