@@ -1,4 +1,6 @@
-﻿namespace Calculator;
+﻿using System.Security.Cryptography;
+
+namespace Calculator;
 
 internal class Program
 {
@@ -11,15 +13,38 @@ internal class Program
         string sB = Console.ReadLine();
         int b = int.Parse(sB);
 
-        int resop = a + b;
-        Console.WriteLine($"{a} + {b} = {resop}");
-        int resaf = a - b;
-        Console.WriteLine($"{a} - {b} = {resaf}");
-        int resve = a * b;
-        Console.WriteLine($"{a} * {b} = {resve}");
-        double ressu = a / (double)b;
-        Console.WriteLine($"{a} / {b} = {ressu}");
-        int resmo = a % b;
-        Console.WriteLine($"{a} % {b} = {resmo}");
+        Console.WriteLine("Welke operatie? Kies uit +, -, *, / of %");
+        string operation = Console.ReadLine();
+
+        switch (operation)
+        {
+            case "+":
+                int resop = a + b;
+                Console.WriteLine($"{a} + {b} = {resop}");
+                break;
+            case "-":
+                Console.WriteLine($"{a} - {b} = {a - b}");
+                break;
+            case "*":
+                Console.WriteLine($"{a} * {b} = {a * b}");
+                break;
+            case "/":
+                Console.WriteLine($"{a} / {b} = {a / (double)b}");
+                break;
+            case "%":
+                Console.WriteLine($"{a} % {b} = {a % b}");
+                break;
+        }
     }
+    //int resop = a + b;
+    //Console.WriteLine($"{a} + {b} = {resop}");
+    //int resaf = a - b;
+    //Console.WriteLine($"{a} - {b} = {resaf}");
+    //int resve = a * b;
+    //Console.WriteLine($"{a} * {b} = {resve}");
+    //double ressu = a / (double)b;
+    //Console.WriteLine($"{a} / {b} = {ressu}");
+    //int resmo = a % b;
+    //Console.WriteLine($"{a} % {b} = {resmo}");
 }
+

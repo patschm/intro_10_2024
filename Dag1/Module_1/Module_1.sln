@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Calculator\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JumpForward", "JumpForward\JumpForward.csproj", "{5473EB00-E282-4B21-BD46-BBF407B91B6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loopings", "Loopings\Loopings.csproj", "{13C29510-8645-4097-81C7-FD0C230FB845}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{5473EB00-E282-4B21-BD46-BBF407B91B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5473EB00-E282-4B21-BD46-BBF407B91B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5473EB00-E282-4B21-BD46-BBF407B91B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13C29510-8645-4097-81C7-FD0C230FB845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C29510-8645-4097-81C7-FD0C230FB845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C29510-8645-4097-81C7-FD0C230FB845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C29510-8645-4097-81C7-FD0C230FB845}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
