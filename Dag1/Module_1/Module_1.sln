@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaadHetGetal", "RaadHetGeta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionsEd", "FunctionsEd\FunctionsEd.csproj", "{AE4371AE-D96F-4981-A126-6B9D7895EFED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrafischeCalculator", "GrafischeCalculator\GrafischeCalculator.csproj", "{0F68F68A-48E3-4B60-B82F-DC26FBDE25A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drillen", "Drillen\Drillen.csproj", "{48CB5369-626D-4295-ABBB-4AD9336FCA01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{AE4371AE-D96F-4981-A126-6B9D7895EFED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE4371AE-D96F-4981-A126-6B9D7895EFED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE4371AE-D96F-4981-A126-6B9D7895EFED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F68F68A-48E3-4B60-B82F-DC26FBDE25A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F68F68A-48E3-4B60-B82F-DC26FBDE25A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F68F68A-48E3-4B60-B82F-DC26FBDE25A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F68F68A-48E3-4B60-B82F-DC26FBDE25A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48CB5369-626D-4295-ABBB-4AD9336FCA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48CB5369-626D-4295-ABBB-4AD9336FCA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48CB5369-626D-4295-ABBB-4AD9336FCA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48CB5369-626D-4295-ABBB-4AD9336FCA01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

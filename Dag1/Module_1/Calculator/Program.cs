@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography;
-
-namespace Calculator;
+﻿namespace Calculator;
 
 internal class Program
 {
