@@ -4,7 +4,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        int hetTeRadenGetal = Random.Shared.Next(1, 11);
+        int hetTeRadenGetal = Random.Shared.Next(1, 5);
 
         int i = 1;
         for(; i <= 5; i++)
@@ -21,16 +21,20 @@ internal class Program
 
             if (gok == hetTeRadenGetal)
             {
-                Console.WriteLine("Gefeliciteerd. U heeft het getal geraden.");
+                //Console.WriteLine("Gefeliciteerd. U heeft het getal geraden.");
                 break;
             }
             if (i < 5)
                 Console.WriteLine("Helaas. Probeer het nogmaals");
         }
-        if (i > 5)
-        {
-            Console.WriteLine("U heeft verloren");
-        }
 
+        if (i > 5)
+       {
+            Console.WriteLine($"U heeft verloren. Het te raden getal was {hetTeRadenGetal}");
+        }
+        else
+        {
+            Console.WriteLine("Gefeliciteerd. U heeft het getal geraden.");
+        }
     }
 }
