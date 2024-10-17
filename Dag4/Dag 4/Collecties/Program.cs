@@ -1,14 +1,39 @@
-﻿namespace Collecties;
+﻿
+namespace Collecties;
 
 internal class Program
 {
     static void Main(string[] args)
     {
         //DemoArray();
-        int[] nummers = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        //int[] nummers = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        //int res =  HetProbleem(nummers);
+        //Console.WriteLine(res);
+        DemoList();
+    }
 
-        int res =  HetProbleem(nummers);
-        Console.WriteLine(res);
+    private static void DemoList()
+    {
+        // List is handig in de zin dat de lijst dynamisch uitbreidbaar is.
+        List<string> hotels = new List<string>();
+        List<int> restaurants = new List<int>();
+        List<DateTime> zonnen = new List<DateTime>();  
+        List<Fietsbel> bellen = new List<Fietsbel>();
+
+        hotels.Add("Hello");
+        hotels.Add("World");
+        hotels.Add("!");
+        hotels[2] = "!!!!!!";
+        Console.WriteLine(hotels[1]);
+        ShowList(hotels);
+    }
+
+    static void ShowList(List<string> list)
+    {
+        foreach (string element in list)
+        {
+            Console.WriteLine(element);
+        }
     }
 
     static void DemoArray()

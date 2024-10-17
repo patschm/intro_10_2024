@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collecties", "Collecties\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayOefening", "ArrayOefening\ArrayOefening.csproj", "{F2A7E459-6EE1-42A4-A758-4AA66B1ECFDD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectenWereld", "ObjectenWereld\ObjectenWereld.csproj", "{4E9BBA46-1F11-41EF-ADCD-0752FA14C1BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F2A7E459-6EE1-42A4-A758-4AA66B1ECFDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2A7E459-6EE1-42A4-A758-4AA66B1ECFDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2A7E459-6EE1-42A4-A758-4AA66B1ECFDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E9BBA46-1F11-41EF-ADCD-0752FA14C1BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E9BBA46-1F11-41EF-ADCD-0752FA14C1BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E9BBA46-1F11-41EF-ADCD-0752FA14C1BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E9BBA46-1F11-41EF-ADCD-0752FA14C1BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
