@@ -4,6 +4,11 @@
     {
         private int snelheid = 0;
 
+        public Auto(string kleur)
+        {
+            Kleur = kleur;
+        }
+
         public int Snelheid
         {
             get

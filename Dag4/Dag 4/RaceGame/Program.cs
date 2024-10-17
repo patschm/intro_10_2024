@@ -5,11 +5,11 @@ namespace RaceGame
     {
         static void Main(string[] args)
         {
-            Auto car1 = new Auto();
-            car1.Kleur = "rood";
+            Auto car1 = new Auto("rood");
+            //car1.Kleur = "rood";
 
-            Auto car2 = new Auto();
-            car2.Kleur = "groen";
+            Auto car2 = new Auto("groen");
+           // car2.Kleur = "groen";
 
             //car1.GasGeven();
             //car1.GasGeven();
