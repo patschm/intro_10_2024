@@ -52,6 +52,7 @@ namespace ObjectenWereld
         // CONSTRUCTORS.
         // Dit zijn speciale functies die bedoeld zijn om FIELDS 
         // een initiele waarde te geven.
+        // Kunnen alleen door new worden aangeroepen!
         public Lamp()
         {
             Console.WriteLine("Hallo constructor");
