@@ -11,15 +11,18 @@
             // En hier al helemaal niet.
             // Dit is jouw virtuele universum (Big Bang)
             Lamp led = new Lamp();  // Lamp is het type, led is de variabelenaam en dus het object
-            led.sterkte = 200;
-            led.kleur = "geel";
+            led.Sterkte = 200;
+            led.Kleur = "geel";
+
+            string ssss = led.Kleur;
+            Console.WriteLine(ssss);
 
             led.Aan();
             led.Uit();
             
             Lamp tl = new Lamp();
-            tl.sterkte = 400;
-            tl.kleur = "rood";
+            tl.Sterkte = -400;
+            tl.Kleur = "rood";
 
             tl.Aan();
             //Lamp[] lampen = new Lamp[5];
@@ -41,14 +44,35 @@
         // En die noemt men dan FIELDS
         // Fields zijn by default private. Alleen binnen de class kan men erbij.
         // Als ze public zijn, kan iedereen erbij.
-        public int sterkte;
-        public string kleur;
+        private int sterkte;
+        //private string kleur;
+
+        // Gecontroleerde toegang tot privates regel je via
+        // PROPERTIES
+        public int Sterkte
+        {
+            get
+            {
+                return sterkte;
+            }
+            set
+            {
+                if (value >= 0)
+                {
+                    sterkte = value; // Value is een impliciet argument
+                }
+            }
+        }
+        
+        // Auto generating properties.
+        // Die brengen hun eigen private field mee.
+        public string Kleur { get; set; }
 
          // Gedrag van een lamp leg je vast in functies/procedures
          // En die noemt men dan METHODS
         public void Aan()
         {
-            Console.WriteLine($"De lamp brandt in het {kleur} met intensiteit {sterkte}lm");
+            Console.WriteLine($"De lamp brandt in het {Kleur} met intensiteit {Sterkte}lm");
         }
         public void Uit()
         {
