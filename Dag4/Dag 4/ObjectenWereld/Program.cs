@@ -1,4 +1,6 @@
-﻿namespace ObjectenWereld
+﻿using System.Collections.Concurrent;
+
+namespace ObjectenWereld
 {
     // Binnen de namespace mag ik alleen types definieren, zoals een class
 
@@ -10,9 +12,9 @@
         {
             // En hier al helemaal niet.
             // Dit is jouw virtuele universum (Big Bang)
-            Lamp led = new Lamp();  // Lamp is het type, led is de variabelenaam en dus het object
+            Lamp led = new Lamp("geel");  // Lamp is het type, led is de variabelenaam en dus het object
             led.Sterkte = 200;
-            led.Kleur = "geel";
+           // led.Kleur = "geel";
 
             string ssss = led.Kleur;
             Console.WriteLine(ssss);
@@ -20,9 +22,9 @@
             led.Aan();
             led.Uit();
             
-            Lamp tl = new Lamp();
+            Lamp tl = new Lamp("rood");
             tl.Sterkte = -400;
-            tl.Kleur = "rood";
+            //tl.Kleur = "rood";
 
             tl.Aan();
             //Lamp[] lampen = new Lamp[5];
@@ -46,6 +48,18 @@
         // Als ze public zijn, kan iedereen erbij.
         private int sterkte;
         //private string kleur;
+
+        // CONSTRUCTORS.
+        // Dit zijn speciale functies die bedoeld zijn om FIELDS 
+        // een initiele waarde te geven.
+        public Lamp()
+        {
+            Console.WriteLine("Hallo constructor");
+        }
+        public Lamp(string kleur)
+        {
+            Kleur = kleur;
+        }
 
         // Gecontroleerde toegang tot privates regel je via
         // PROPERTIES

@@ -1,14 +1,15 @@
-﻿namespace RaceGame
+﻿
+namespace RaceGame
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             Auto car1 = new Auto();
-            car1.kleur = "rood";
+            car1.Kleur = "rood";
 
             Auto car2 = new Auto();
-            car2.kleur = "groen";
+            car2.Kleur = "groen";
 
             //car1.GasGeven();
             //car1.GasGeven();
@@ -21,7 +22,7 @@
             //car2.RechtsAf();
 
             Control(car2);
-            
+
         }
         static void Control(Auto car)
         {
@@ -49,28 +50,5 @@
         }
     }
 
-    class Auto
-    {
-        public int snelheid = 0;
-        public string kleur;
 
-        public void GasGeven()
-        {
-            snelheid += 10;
-            Console.WriteLine($"de {kleur} auto versnelt nu tot {snelheid}km/u");
-        }
-        public void Remmen()
-        {
-            snelheid -= 10;
-            Console.WriteLine($"de {kleur} auto vertraagt nu tot {snelheid}km/u");
-        }
-        public void LinksAf()
-        {
-            Console.WriteLine($"de {kleur} auto gaat linksaf");
-        }
-        public void RechtsAf()
-        {
-            Console.WriteLine($"de {kleur} auto gaat rechtsaf");
-        }
-    }
 }
