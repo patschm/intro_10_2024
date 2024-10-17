@@ -57,6 +57,7 @@ namespace ObjectenWereld
         {
             Console.WriteLine("Hallo constructor");
         }
+        // Ook constructors kunnen argumenten hebben.
         public Lamp(string kleur)
         {
             Kleur = kleur;
