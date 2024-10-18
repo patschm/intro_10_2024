@@ -4,11 +4,13 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Lamp l1 = new Lamp { Kleur = "paars", Sterkte = 300 };
-        l1.Aan();
+       // Lamp l1 = new Lamp { Kleur = "paars", Sterkte = 300 };
+        //l1.Aan();
+        //l1.Uit();
 
-        TL tl1 = new TL { Kleur = "zwart", Sterkte = 200, StartTijd = 5 };
+        Lamp tl1 = new TL { Kleur = "zwart", Sterkte = 200, StartTijd = 5 };
         tl1.Aan();
+        tl1.Uit();
 
         // Ik maak een nieuw TL object en beschouw hem als Lamp.
         // Dit is nu Generaliseren.
@@ -25,6 +27,7 @@ internal class Program
     static void SteekLampAan(Lamp lamp)
     {
         lamp.Aan();
+        lamp.Uit();
     }
     //static void SteekLampAan(BouwLamp lamp)
     //{

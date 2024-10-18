@@ -7,7 +7,8 @@ namespace LastigereObjecten
     // Ik mag wèl van TL erven
     // Hergebruik is een belangrijk voordeel (DRY)
     // !!! Bij overerving moet je altijd de vraag kunnen stellen: Is het een
-    class TL : Lamp
+    // Als een class sealed is, kun je er niet meer vaan erven.
+    sealed class TL : Lamp
     {
         public int StartTijd { get; set; } = 4;
 
@@ -17,7 +18,7 @@ namespace LastigereObjecten
             Console.WriteLine($"De TL knippert {StartTijd} seconde");
             Console.WriteLine($"De TL brandt in het {Kleur} met intensiteit {Sterkte}lm");
         }
-        public void Uit()
+        public override void Uit()
         {
             Console.WriteLine("De TL is nu uit");
         }

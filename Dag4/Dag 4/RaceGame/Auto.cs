@@ -3,7 +3,12 @@
     class Auto
     {
         private int snelheid = 0;
+        protected int MaxSnelheid = 300;
 
+        public Auto()
+        {
+            
+        }
         public Auto(string kleur)
         {
             Kleur = kleur;
@@ -17,7 +22,7 @@
             }
             set
             {
-                if (value >= 0 && value <= 300)
+                if (value >= 0 && value <= MaxSnelheid)
                 {
                     snelheid = value;
                 }
@@ -25,7 +30,7 @@
         }
         public string Kleur { get; set; }
 
-        public void GasGeven()
+        public virtual void GasGeven()
         {
             Snelheid += 10;
             Console.WriteLine($"de {Kleur} auto versnelt nu tot {Snelheid}km/u");

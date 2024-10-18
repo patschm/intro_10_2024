@@ -5,10 +5,10 @@ namespace RaceGame
     {
         static void Main(string[] args)
         {
-            Auto car1 = new Auto("rood");
+            DAF car1 = new DAF { Kleur = "grijs" };
             //car1.Kleur = "rood";
 
-            Auto car2 = new Auto("groen");
+            Ferrari car2 = new Ferrari { Kleur = "rood" };
            // car2.Kleur = "groen";
 
             //car1.GasGeven();
@@ -21,7 +21,7 @@ namespace RaceGame
             //car1.LinksAf();
             //car2.RechtsAf();
 
-            Control(car2);
+            Control(car1);
 
         }
         static void Control(Auto car)
