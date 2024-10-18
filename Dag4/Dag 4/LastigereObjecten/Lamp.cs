@@ -1,6 +1,4 @@
-﻿
-
-namespace LastigereObjecten
+﻿namespace LastigereObjecten
 {
     // Het keyword abstract voorkomt dat je instanties (objecten)
     // kunt maken van deze class.
@@ -25,7 +23,7 @@ namespace LastigereObjecten
         }
         public string Kleur { get; set; }
 
-        // Met virtual geef ik aan dat dit gedraga polymorf KAN zijn.
+        // Met virtual geef ik aan dat dit gedrag polymorf KAN zijn.
         // Een afgeleide class kan besluiten het gedrag polymorf te maken.
         // Is dus optioneel (vrijblijvend)
         public virtual void Aan()

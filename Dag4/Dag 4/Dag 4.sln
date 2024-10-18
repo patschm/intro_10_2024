@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RaceGame", "RaceGame\RaceGa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastigereObjecten", "LastigereObjecten\LastigereObjecten.csproj", "{7B2AC964-A842-4252-92F4-7F63BA73470D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tekenprogramma", "Tekenprogramma\Tekenprogramma.csproj", "{AA6D41F1-6CF9-4CD1-89C6-2A28DA781B7B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gravies", "Gravies\Gravies.csproj", "{F2DAFF67-A1A6-4111-80BC-2748FB23D9E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{7B2AC964-A842-4252-92F4-7F63BA73470D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B2AC964-A842-4252-92F4-7F63BA73470D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B2AC964-A842-4252-92F4-7F63BA73470D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA6D41F1-6CF9-4CD1-89C6-2A28DA781B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA6D41F1-6CF9-4CD1-89C6-2A28DA781B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA6D41F1-6CF9-4CD1-89C6-2A28DA781B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA6D41F1-6CF9-4CD1-89C6-2A28DA781B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2DAFF67-A1A6-4111-80BC-2748FB23D9E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2DAFF67-A1A6-4111-80BC-2748FB23D9E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2DAFF67-A1A6-4111-80BC-2748FB23D9E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2DAFF67-A1A6-4111-80BC-2748FB23D9E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
