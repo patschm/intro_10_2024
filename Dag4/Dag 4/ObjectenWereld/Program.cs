@@ -34,6 +34,14 @@ namespace ObjectenWereld
             //lams.Add(led);
             //lams.Add(tl);
 
+            // Property Initializers
+            Lamp schemerlamp = new Lamp
+            {
+                Kleur = "blauw",
+                Sterkte = 500
+            };
+
+            schemerlamp.Aan();
             // Einde universum (Big crunch)
         }
     }
@@ -46,7 +54,7 @@ namespace ObjectenWereld
         // En die noemt men dan FIELDS
         // Fields zijn by default private. Alleen binnen de class kan men erbij.
         // Als ze public zijn, kan iedereen erbij.
-        private int sterkte;
+        private int sterkte = 0;
         //private string kleur;
 
         // CONSTRUCTORS.
